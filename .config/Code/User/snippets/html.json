@@ -1,0 +1,84 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"If jinja condition": {
+		"prefix": "if",
+		"body": [
+			"{% if ${1:condition} %}",
+			"	${2:instructions}",
+			"{% endif %}"
+		],
+		"description": "insert a If jinja condition"
+	},
+	"If/Else jinja condition": {
+		"prefix": "ifel",
+		"body": [
+			"{% if ${1:condition} %}",
+			"	${2:instructions}",
+			"{% else %}",
+			"	${3:instructions}",
+			"{% endif %}"
+		],
+		"description": "insert a If/Else jinja condition"
+	},
+	"Jinja block": {
+		"prefix": "blo",
+		"body": [
+			"{% block '${1:name}' %}${2:content}{% endblock%}"
+		],
+		"description": "Insert a Jinja block"
+	},
+	"Jinja extends": {
+		"prefix": "ext",
+		"body": [
+			"{% extends '${1:path}' %}"
+		],
+		"description": "Insert a Jinja extends"
+	},
+	"Jinja include": {
+		"prefix": "inc",
+		"body": [
+			"{% include '${1:path}' %}"
+		],
+		"description": "Insert a Jinja include"
+	},
+	"Jinja static load": {
+		"prefix": "load",
+		"body": [
+			"{% load static %}"
+		],
+		"description": "Load the Jinja static module"
+	},
+	"Jinja static": {
+		"prefix": "sta",
+		"body": [
+			"{% static '${1:path}' %}"
+		],
+		"description": "Insert a Jinja static"
+	},
+	"Jinja url": {
+		"prefix": "url",
+		"body": [
+			"{% url '${1:name}' ${2:params} %}"
+		],
+		"description": "Insert a Jinja url"
+	},
+	"Jinja variable": {
+		"prefix": "var",
+		"body": [
+			"{{ ${1:variable} }}"
+		],
+		"description": "Insert a Jinja variable"
+	},
+}

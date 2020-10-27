@@ -1,0 +1,58 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "GitHub Light",
+    "workbench.tree.indent": 24,
+    "workbench.startupEditor": "readme",
+    "window.restoreFullscreen": true,
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "zenMode.restore": true,
+    "search.showLineNumbers": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "atomKeymap.promptV3Features": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.autofetch": true,
+    // "git.postCommitCommand": "push",
+    "breadcrumbs.enabled": true,
+    "window.menuBarVisibility": "toggle",
+    "python.diagnostics.sourceMapsEnabled": false,
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "debug.internalConsoleOptions": "neverOpen",
+    "debug.inlineValues": true,
+    "debug.openDebug": "neverOpen",
+    // "debug.toolBarLocation": "docked",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+    "git.showPushSuccessNotification": true,
+    "editor.minimap.enabled": false,
+    "liveshare.presence": true,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.advanced.messages": {
+        "suppressLineUncommittedWarning": true
+    },
+    "python.dataScience.askForKernelRestart": false,
+    "editor.mouseWheelZoom": true,
+    "workbench.panel.defaultLocation": "right",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 0,
+    "python.languageServer": "Microsoft",
+    "compile-hero.generate-minified-javascript": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "compile-hero.generate-minified-css": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "files.associations": {
+        "config": "properties"
+    }
+}

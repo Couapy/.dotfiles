@@ -1,0 +1,273 @@
+14/09/20 (16:50:59) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+14/09/20 (16:51:01) | ERROR: Non fatal error during disk io collection!
+14/09/20 (16:51:01) | ERROR: Caused by outdated psutil version.
+14/09/20 (16:51:01) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 133309 56247 7510310 338071 109717 90116 5021733 167833 0 152955 623663 55882 0 249132912 112667 8082 5090\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2801, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 133309 56247 7510310 338071 109717 90116 5021733 167833 0 152955 623663 55882 0 249132912 112667 8082 5090\n'
+16/09/20 (13:50:14) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+16/09/20 (13:50:15) | ERROR: Non fatal error during disk io collection!
+16/09/20 (13:50:15) | ERROR: Caused by outdated psutil version.
+16/09/20 (13:50:15) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 105882 54498 6092670 26418 111139 81439 5227813 85024 0 50381 114545 0 0 0 0 7848 3102\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2801, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 105882 54498 6092670 26418 111139 81439 5227813 85024 0 50381 114545 0 0 0 0 7848 3102\n'
+18/09/20 (16:47:21) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+18/09/20 (16:47:22) | ERROR: Non fatal error during disk io collection!
+18/09/20 (16:47:22) | ERROR: Caused by outdated psutil version.
+18/09/20 (16:47:22) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 61175 35287 4147715 12492 30418 19673 2837877 27558 0 23678 40719 0 0 0 0 1987 667\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2855, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 61175 35287 4147715 12492 30418 19673 2837877 27558 0 23678 40719 0 0 0 0 1987 667\n'
+18/09/20 (17:05:34) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+18/09/20 (17:05:35) | ERROR: Non fatal error during disk io collection!
+18/09/20 (17:05:35) | ERROR: Caused by outdated psutil version.
+18/09/20 (17:05:35) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 61340 35317 4159219 12586 38278 26623 3030317 33902 0 27128 47405 0 0 0 0 2858 916\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2855, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 61340 35317 4159219 12586 38278 26623 3030317 33902 0 27128 47405 0 0 0 0 2858 916\n'
+21/09/20 (15:56:56) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+21/09/20 (15:56:58) | ERROR: Non fatal error during disk io collection!
+21/09/20 (15:56:58) | ERROR: Caused by outdated psutil version.
+21/09/20 (15:56:58) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 147906 56081 7293254 258098 156317 161974 9194811 165807 0 121012 486189 56663 0 247804352 57164 11478 5118\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2855, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 147906 56081 7293254 258098 156317 161974 9194811 165807 0 121012 486189 56663 0 247804352 57164 11478 5118\n'
+28/09/20 (16:13:55) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+28/09/20 (16:13:56) | ERROR: Non fatal error during disk io collection!
+28/09/20 (16:13:56) | ERROR: Caused by outdated psutil version.
+28/09/20 (16:13:56) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 127517 58563 5763662 261419 284145 275798 20961331 265837 0 152089 600151 56390 0 245990576 64425 21385 8468\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2889, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 127517 58563 5763662 261419 284145 275798 20961331 265837 0 152089 600151 56390 0 245990576 64425 21385 8468\n'
+29/09/20 (18:06:45) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+29/09/20 (18:06:46) | ERROR: Non fatal error during disk io collection!
+29/09/20 (18:06:46) | ERROR: Caused by outdated psutil version.
+29/09/20 (18:06:46) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 55243 24614 3897022 19195 23611 20482 911357 13011 0 19496 33150 0 0 0 0 1790 943\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2889, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 55243 24614 3897022 19195 23611 20482 911357 13011 0 19496 33150 0 0 0 0 1790 943\n'
+15/10/20 (16:32:24) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+15/10/20 (16:32:25) | ERROR: Non fatal error during disk io collection!
+15/10/20 (16:32:25) | ERROR: Caused by outdated psutil version.
+15/10/20 (16:32:25) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 252850 64960 13367014 50376 239240 198734 18913237 328954 0 136842 386183 0 0 0 0 20466 6853\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2930, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 252850 64960 13367014 50376 239240 198734 18913237 328954 0 136842 386183 0 0 0 0 20466 6853\n'
+15/10/20 (18:00:49) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+15/10/20 (18:00:51) | ERROR: Non fatal error during disk io collection!
+15/10/20 (18:00:51) | ERROR: Caused by outdated psutil version.
+15/10/20 (18:00:51) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 310978 76432 16780142 62768 314730 253949 22314085 379015 0 176047 450877 0 0 0 0 27334 9093\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2930, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 310978 76432 16780142 62768 314730 253949 22314085 379015 0 176047 450877 0 0 0 0 27334 9093\n'
+15/10/20 (19:05:59) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+15/10/20 (19:06:01) | ERROR: Non fatal error during disk io collection!
+15/10/20 (19:06:01) | ERROR: Caused by outdated psutil version.
+15/10/20 (19:06:01) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 327076 77830 17665798 68307 378145 298630 24711981 436998 0 199845 515989 0 0 0 0 32696 10682\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2930, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 327076 77830 17665798 68307 378145 298630 24711981 436998 0 199845 515989 0 0 0 0 32696 10682\n'
+21/10/20 (17:13:48) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+21/10/20 (17:13:49) | ERROR: Non fatal error during disk io collection!
+21/10/20 (17:13:49) | ERROR: Caused by outdated psutil version.
+21/10/20 (17:13:49) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 184377 65250 5305198 30067 102093 56609 2773941 86687 0 60908 119241 0 0 0 0 7965 2486\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2934, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 184377 65250 5305198 30067 102093 56609 2773941 86687 0 60908 119241 0 0 0 0 7965 2486\n'
+21/10/20 (17:13:49) | ERROR: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2738, in _collect_temps
+    if hasattr(entry, "high") and entry.high > 1: cls.cpu_temp_high = round(entry.high)
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+21/10/20 (17:14:50) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+21/10/20 (17:14:51) | ERROR: Non fatal error during disk io collection!
+21/10/20 (17:14:51) | ERROR: Caused by outdated psutil version.
+21/10/20 (17:14:51) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 184386 65250 5305814 30074 103534 57367 2805093 87965 0 61224 120556 0 0 0 0 8070 2516\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2934, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 184386 65250 5305814 30074 103534 57367 2805093 87965 0 61224 120556 0 0 0 0 8070 2516\n'
+21/10/20 (17:14:51) | ERROR: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2738, in _collect_temps
+    if hasattr(entry, "high") and entry.high > 1: cls.cpu_temp_high = round(entry.high)
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+21/10/20 (17:15:04) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+21/10/20 (17:15:06) | ERROR: Non fatal error during disk io collection!
+21/10/20 (17:15:06) | ERROR: Caused by outdated psutil version.
+21/10/20 (17:15:06) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 184389 65250 5305838 30075 103728 57501 2824061 88149 0 61295 120746 0 0 0 0 8089 2521\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2934, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 184389 65250 5305838 30075 103728 57501 2824061 88149 0 61295 120746 0 0 0 0 8089 2521\n'
+21/10/20 (17:15:06) | ERROR: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2738, in _collect_temps
+    if hasattr(entry, "high") and entry.high > 1: cls.cpu_temp_high = round(entry.high)
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+21/10/20 (17:26:54) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+21/10/20 (17:26:57) | ERROR: Non fatal error during disk io collection!
+21/10/20 (17:26:57) | ERROR: Caused by outdated psutil version.
+21/10/20 (17:26:57) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 184903 65340 5320038 30215 110995 61876 3006365 94452 0 63626 127377 0 0 0 0 8755 2710\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2934, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 184903 65340 5320038 30215 110995 61876 3006365 94452 0 63626 127377 0 0 0 0 8755 2710\n'
+21/10/20 (17:26:57) | ERROR: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2738, in _collect_temps
+    if hasattr(entry, "high") and entry.high > 1: cls.cpu_temp_high = round(entry.high)
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+22/10/20 (08:20:47) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+22/10/20 (08:20:49) | ERROR: Non fatal error during disk io collection!
+22/10/20 (08:20:49) | ERROR: Caused by outdated psutil version.
+22/10/20 (08:20:49) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 79547 60500 3580374 15125 9592 8020 680565 7079 0 15642 22465 0 0 0 0 714 260\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2934, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 79547 60500 3580374 15125 9592 8020 680565 7079 0 15642 22465 0 0 0 0 714 260\n'
+22/10/20 (08:20:49) | ERROR: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2738, in _collect_temps
+    if hasattr(entry, "high") and entry.high > 1: cls.cpu_temp_high = round(entry.high)
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+22/10/20 (08:40:42) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+22/10/20 (08:40:43) | ERROR: Non fatal error during disk io collection!
+22/10/20 (08:40:43) | ERROR: Caused by outdated psutil version.
+22/10/20 (08:40:43) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 153317 62696 7946846 43936 19408 20295 1167525 14010 0 25820 58459 0 0 0 0 1484 512\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2934, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 153317 62696 7946846 43936 19408 20295 1167525 14010 0 25820 58459 0 0 0 0 1484 512\n'
+22/10/20 (08:40:43) | ERROR: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2738, in _collect_temps
+    if hasattr(entry, "high") and entry.high > 1: cls.cpu_temp_high = round(entry.high)
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+22/10/20 (17:12:28) | WARNING: psutil version 5.6.7 detected, version 5.7.0 or later required for full functionality!
+22/10/20 (17:12:30) | ERROR: Non fatal error during disk io collection!
+22/10/20 (17:12:30) | ERROR: Caused by outdated psutil version.
+22/10/20 (17:12:30) | ERROR: not sure how to interpret line ' 259       0 nvme0n1 85711 38395 4919006 18822 75527 67690 3878709 106491 0 39884 127788 0 0 0 0 8432 2474\n'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2934, in _collect
+    io_counters = psutil.disk_io_counters(perdisk=True if SYSTEM == "Linux" else False, nowrap=True)
+  File "/usr/lib64/python3.8/site-packages/psutil/__init__.py", line 2168, in disk_io_counters
+    rawdict = _psplatform.disk_io_counters(**kwargs)
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1125, in disk_io_counters
+    for entry in gen:
+  File "/usr/lib64/python3.8/site-packages/psutil/_pslinux.py", line 1098, in read_procfs
+    raise ValueError("not sure how to interpret line %r" % line)
+ValueError: not sure how to interpret line ' 259       0 nvme0n1 85711 38395 4919006 18822 75527 67690 3878709 106491 0 39884 127788 0 0 0 0 8432 2474\n'
+22/10/20 (17:12:30) | ERROR: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 2738, in _collect_temps
+    if hasattr(entry, "high") and entry.high > 1: cls.cpu_temp_high = round(entry.high)
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
