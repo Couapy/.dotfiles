@@ -22,6 +22,7 @@ case $chosen in
         systemctl reboot
         ;;
     $lock)
+        sleep 1
         i3lock-fancy
         ;;
     $suspend)
