@@ -1,0 +1,19 @@
+syntax "ini" "\.ini(\.old|\.bak|\.example|~)?$"
+
+## Values
+color brightblue "=.*$"
+
+## Equal sign
+color green "="
+
+## Numbers
+color brightblue "-?[0-9\.]+\s*($|;)"
+
+## Sections
+color brightgreen "^\s*\[.*\]"
+
+## Keys
+color normal "^\s*[a-zA-Z0-9_\.]+"
+
+## Comments
+color brightmagenta ";.*$"

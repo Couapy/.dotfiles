@@ -1,0 +1,80 @@
+## === Options ===
+set afterends
+set atblanks
+set autoindent
+set brackets ""')>]}"
+set casesensitive
+set historylog
+set indicator
+set linenumbers
+set locking
+set magic
+set matchbrackets ""'(<[{"')>]}"
+#set mouse
+set nohelp
+set nonewlines
+set positionlog
+set punct "!.?;"
+set quickblank
+set regexp
+#set saveonexit
+set smarthome
+set softwrap
+#set suspendable
+set tabsize 4
+set tabstospaces
+set trimblanks
+set whitespace "»·"
+set wordchars "<_>."
+set zap
+
+
+## === Colors ===
+
+set titlecolor bold,blue
+set statuscolor blue
+set errorcolor red
+set stripecolor yellow
+set scrollercolor black
+set numbercolor blue
+set keycolor blue
+set functioncolor cyan
+
+
+## === Syntax coloring ===
+
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano/extra/*.nanorc"
+include "~/.config/nano/syntaxes/ini.nanorc"
+
+## === Key bindings ===
+
+bind ^H chopwordleft main
+bind ^Q exit all
+bind ^S savefile main
+bind ^W writeout main
+bind ^O insert main
+bind ^H exit help
+bind ^F whereis all
+bind ^G findnext all
+bind ^D findprevious all
+bind ^R replace main
+bind M-X flipnewbuffer all
+bind ^X cut all
+bind ^C copy main
+bind ^V paste all
+bind ^P location main
+bind ^A mark main
+unbind ^K main
+unbind ^U all
+unbind ^N main
+unbind ^Y all
+unbind M-J main
+unbind M-T main
+bind ^G gotoline main
+bind ^T gotodir browser
+bind M-U undo main
+bind M-R redo main
+bind ^U undo main
+bind ^E redo main
+set multibuffer
