@@ -11,13 +11,17 @@
 ## === Base ===
 set $mod Mod4
 font pango:DejaVu Sans 10
-default_border pixel 4
-no_focus [window_role="pop-up"]
 focus_wrapping no 
 focus_follows_mouse no
 
-## === Colors ===
-# class                 border  backgr. text    indicator child_border
+## === Style ===
+### --- Base ---
+gaps inner 15
+smart_gaps on
+smart_borders on
+hide_edge_borders smart_no_gaps
+
+### --- Colors ---      border  backgr. text    indicator child_border
 client.focused          #4c7899 #3B4252 #ffffff #2e9ef4   #5E81AC
 client.focused_inactive #4C566A #434C5E #ffffff #88C0D0   #81A1C1
 client.unfocused        #4C566A #4C566A #ECEFF4 #292d2e   #3B4252
@@ -31,11 +35,11 @@ floating_modifier $mod
 floating_maximum_size 1920 x 1080
 bindsym $mod+Return exec kitty
 bindsym $mod+Shift+A kill
-bindsym $mod+d exec sh ~/.config/rofi/launcher.sh
-bindsym $mod+Shift+d exec sh ~/.config/rofi/ssh_launcher.sh
+bindsym $mod+d exec sh ~/.config/rofi/scripts/app-launcher.sh
+bindsym $mod+Shift+d exec sh ~/.config/rofi/scripts/ssh-launcher.sh
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+e exec sh ~/.config/rofi/powermenu.sh
+bindsym $mod+Shift+e exec sh ~/.config/rofi/scripts/powermenu.sh
 bindsym Print exec "maim -s | xclip -selection clipboard -t image/png"
 
 ### --- Media ---
@@ -185,27 +189,13 @@ mode "$mode_keyboard_layout" {
 ## === Tools ====
 ### --- titlebar ---
 for_window [class=".*"] title_format " %title"
+no_focus [window_role="pop-up"]
 
-### --- i3-gaps ---
-gaps inner 15
-smart_gaps on
-smart_borders on
-hide_edge_borders smart_no_gaps
-
-### --- Polybar ---
+### --- Launch applications ---
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-
-### --- Picom ---
 exec --no-startup-id picom -bf
-
-### --- Wallpaper ---
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/kurt-cotoaga\ [RESIZED].jpg
-
-### --- Redshift ---
 exec --no-startup-id redshift -P -t 5000:4000
-
-### --- i3-lock ---
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
-
-### --- nm-applet ---
 exec --no-startup-id nm-applet
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
