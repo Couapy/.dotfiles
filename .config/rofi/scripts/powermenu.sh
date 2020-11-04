@@ -1,19 +1,14 @@
 #!/usr/bin/env bash
 
-## Author : Aditya Shakya (adi1090x)
-## Mail : adi1090x@gmail.com
-## Github : @adi1090x
-## Reddit : @adi1090x
-
-rofi_command="rofi -theme themes/powermenu.rasi"
+rofi_command="rofi -theme themes/vertical.rasi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 # Options
-shutdown="襤"
-reboot="ﰇ"
-lock=""
-suspend="鈴"
-logout=""
+shutdown=""
+reboot=""
+lock=""
+suspend=""
+logout=""
 
 # Variable passed to rofi
 options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
@@ -27,15 +22,14 @@ case $chosen in
         systemctl reboot
         ;;
     $lock)
-        i3lock
+        sleep 0.5
+        i3lock-fancy
         ;;
     $suspend)
-        mpc -q pause
-        amixer set Master mute
         systemctl suspend
         ;;
     $logout)
-        openbox --exit
+        i3-msg exit
         ;;
 esac
 

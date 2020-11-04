@@ -1,38 +1,29 @@
-/*
- *
- * Author : Aditya Shakya (adi1090x)
- * Mail : adi1090x@gmail.com
- * Github : @adi1090x
- * Reddit : @adi1090x
- *
- */
-
-@import "colors.rasi"
+@import "colors"
 
 * {
-  /* General */
   text-font:                            "Comfortaa 12";
-  icon-font:                            "feather 18";
+  icon-font:                            "FontAwesome 18";
   
   option-6-listview-spacing:            6px;
   menu-window-padding:                  6px 6px;
-  menu-element-padding:                 20px 0px 15px -10px;
+  menu-element-padding:                 20px 0px 15px 0px;
 }
 
 #window {
-  width: 6%;
-  height: 46%;
+  width: 76px;
   anchor: east;
   location: east;
-  x-offset: -1%;
+  x-offset: -20px;
   y-offset: 0%;
   border: 0px;
   border-radius: 12px;
+  padding: @menu-window-padding;
+  children: [ inputbar, horibox ];
 }
 
 * {
-  background-color: @background;
-  text-color: @foreground;
+  background-color: @nord6;
+  text-color: @nord0;
   font: @icon-font;
 }
 
@@ -48,21 +39,13 @@
   border: 0px;
   border-radius: 10px;
   padding: @option-element-padding;
-  background-color: @background-light;
+  background-color: @nord4;
 }
 
 #element.selected {
-  background-color: @accent;
-  text-color: @background;
-}
-
-* {
-  font: @text-font;
-}
-
-#window {
-  padding: @menu-window-padding;
-  children: [ inputbar, horibox ];
+  background-color: @nord10;
+  text-color: @nord6;
+  border-color: @nord10;
 }
 
 #inputbar {
@@ -73,38 +56,34 @@
 
 #listview {
   spacing: @option-6-listview-spacing;
-  lines: 3;
+  lines: 5;
 }
 
 #element {
   font: @icon-font;
   border: @menu-element-border;
   padding: @menu-element-padding;
-  border-color: @background-light;
-}
-
-#element.selected {
-  border-color: @accent;
+  border-color: @nord4;
 }
 
 element.active,
 element.selected.urgent {
-  background-color: @on;
-  text-color: @background;
-  border-color: @on;
+  background-color: @nord14;
+  text-color: @nord6;
+  border-color: @nord14;
 }
 
 element.selected.urgent {
-  border-color: @accent;
+  border-color: @nord10;
 }
 
 element.urgent,
 element.selected.active {
-  background-color: @off;
-  text-color: @background;
-  border-color: @off;
+  background-color: @nord11;
+  text-color: @nord6;
+  border-color: @nord11;
 }
 
 element.selected.active {
-  border-color: @accent;
+  border-color: @nord10;
 }

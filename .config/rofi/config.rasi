@@ -3,6 +3,4 @@
 configuration {
   show-icons:         true;
   icon-theme:         "Papirus";
-  yoffset: -50;
-  xoffset: -20;
 }
