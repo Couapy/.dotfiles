@@ -20,6 +20,8 @@ gaps inner 15
 smart_gaps on
 smart_borders on
 hide_edge_borders smart_no_gaps
+new_window 1pixel
+default_border pixel 4
 
 ### --- Colors ---      border  backgr. text    indicator child_border
 client.focused          #4c7899 #3B4252 #ffffff #2e9ef4   #5E81AC
