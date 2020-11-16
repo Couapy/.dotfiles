@@ -39,6 +39,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+A kill
 bindsym $mod+d exec sh ~/.config/rofi/scripts/app-launcher.sh
 bindsym $mod+Shift+d exec sh ~/.config/rofi/scripts/ssh-launcher.sh
+bindsym $mod+n exec dunstctl history-pop
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec sh ~/.config/rofi/scripts/powermenu.sh
