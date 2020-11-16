@@ -1,6 +1,6 @@
 [global]
 follow = mouse
-geometry = "400x50-20+46"
+geometry = "400x50-15+42"
 indicate_hidden = yes
 transparency = 0
 separator_height = 2
@@ -17,7 +17,7 @@ markup = full
 format = "<b>%p%s</b>\n%b"
 alignment = left
 vertical_alignment = center
-show_age_threshold = 60
+show_age_threshold = 3600
 word_wrap = yes
 ignore_newline = no
 stack_duplicates = true
@@ -64,7 +64,7 @@ close_all = ctrl+shift+space
 # On the US keyboard layout "grave" is normally above TAB and left
 # of "1". Make sure this key actually exists on your keyboard layout,
 # e.g. check output of 'xmodmap -pke'
-history = ctrl+asterix
+history = ctrl+egrave
 context = ctrl+shift+period
 
 [urgency_low]
