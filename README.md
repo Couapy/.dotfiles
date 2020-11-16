@@ -8,13 +8,13 @@ This repository contains my .dotfiles.
 
 ## Summary
 
-[Screenshots](#install)
+[Screenshots](#screenshots)
 
 [Color theming](#color-theming)
 
 [Install](#install)
 
-[Softwares](#install)
+[Softwares](#softwares)
 
 ## Color theming
 
