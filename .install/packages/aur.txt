@@ -1,0 +1,17 @@
+aic94xx-firmware
+archlinux-appstream-data-pamac
+bpytop
+breeze-obsidian-cursor-theme
+eclipse-java-bin
+grub-theme-vimix-git
+i3lock-fancy-git
+jdk
+lightdm-webkit2-theme-glorious
+pacman-pkgfile-hook
+pamac-aur
+paper-icon-theme
+polybar
+visual-studio-code-bin
+wd719x-firmware
+yay
+zoom
