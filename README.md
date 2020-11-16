@@ -24,6 +24,6 @@ I used the nord color theme for customising every soft I could.
 
 ## Screenshots
 
-![desktop-dunst](/Couapy/.dotfiles/raw/main/.install/screenshots/desktop-dunst.png)
-![i3-gaps](/Couapy/.dotfiles/raw/main/.install/screenshots/i3-gaps.png)
-![rofi](/Couapy/.dotfiles/raw/main/.install/screenshots/rofi.png)
+![desktop-dunst](https://raw.githubusercontent.com/Couapy/.dotfiles/main/.install/screenshots/desktop-dunst.png)
+![i3-gaps](https://raw.githubusercontent.com/Couapy/.dotfiles/main/.install/screenshots/i3-gaps.png)
+![rofi](https://raw.githubusercontent.com/Couapy/.dotfiles/main/.install/screenshots/rofi.png)
