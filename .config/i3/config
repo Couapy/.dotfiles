@@ -13,6 +13,8 @@ set $mod Mod4
 font pango:DejaVu Sans 10
 focus_wrapping no 
 focus_follows_mouse no
+focus_on_window_activation focus
+workspace_auto_back_and_forth yes
 
 ## === Style ===
 ### --- Base ---
@@ -193,13 +195,12 @@ mode "$mode_keyboard_layout" {
 ### --- titlebar ---
 for_window [class=".*"] title_format " %title"
 no_focus [window_role="pop-up"]
+for_window [urgent=latest] focus
 
 ### --- Launch applications ---
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id picom -bf
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/kurt-cotoaga\ [RESIZED].jpg
 exec --no-startup-id redshift -P -t 5000:4000
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
-exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id dunst

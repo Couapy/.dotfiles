@@ -16,6 +16,9 @@ mkdir -p $XDG_MUSIC_DIR
 mkdir -p $XDG_PICTURE_DIR
 mkdir -p $XDG_VIDEOS_DIR
 
+# Make executable scripts
+chmod +x $HOME/.config/dunst/alert.sh
+
 # configure fish
 curl -L https://get.oh-my.fish | fish
 omf install bobthefish

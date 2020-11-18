@@ -90,3 +90,8 @@ timeout = 0
 appname = "Spotify"
 skip_display = yes
 history_ignore = yes
+
+[sound]
+appname = "*"
+script = ~/.config/dunst/alert.sh
+#paplay --volume=45000 ~/.config/dunst/notification.ogg
