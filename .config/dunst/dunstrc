@@ -86,12 +86,19 @@ timeout = 0
 #icon = /path/to/icon
 
 ### My rules ###
+[sound_critical]
+appname = "*"
+script = ~/.config/dunst/alert_critical.sh
+msg_urgency = critical
+
+[sound_normal]
+appname = "*"
+script = ~/.config/dunst/alert_normal.sh
+msg_urgency = normal
+
 [spotify]
 appname = "Spotify"
 skip_display = yes
 history_ignore = yes
-
-[sound]
-appname = "*"
-script = ~/.config/dunst/alert.sh
-#paplay --volume=45000 ~/.config/dunst/notification.ogg
+urgency = low
+format = ""
