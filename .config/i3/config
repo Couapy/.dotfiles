@@ -162,6 +162,17 @@ mode " gaps" {
         bindsym $mod+g mode "default"
 }
 
+### --- Aspect Ratio ---
+set $mode_aspect_ratio  Set resolution : (1)3440x1440:120Hz (2)1920x1080:120Hz
+bindsym $mod+a mode "$mode_aspect_ratio"
+mode "$mode_aspect_ratio" {
+    bindsym 1 exec xrandr --output DisplayPort-0 --mode 3440x1440 --rate 120 --set "scaling mode" "Full aspect" ; restart
+    bindsym 2 exec xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120 --set "scaling mode" "Full aspect" ; restart
+    bindsym $mod+aé mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
 ### --- Redshift ---
 set $mode_redshift  Set colour temperature: (a)uto, (r)eset, (2)500K, (3-6)000K
 set $kill_redshift pkill -9 redshift
