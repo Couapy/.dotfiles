@@ -1,11 +1,11 @@
 @import "./all.rasi"
 
 /**
- * Configuration for 3440x1440 resolution
+ * Configuration for 1920x1080 resolution
  */
-@media ( min-width: 3440 ) {
+@media ( min-width: 1920 ) {
     * {
-        window-padding: 20%;
+        window-padding: 14% 15%;
 
         entry-padding: 15px 15px;
         inputbar-margin: 0px 0px 20px 0px;
@@ -13,10 +13,10 @@
         listview-margin: -10px;
         element-margin: 10px;
         element-padding: 20px;
-        element-icon-size: 96px;
+        element-icon-size: 72px;
         element-text-margin: 20px 0px 0px 0px;
 
-        option-window-padding: 648px 1300px;
+        option-window-padding: 468px 540px;
         option-element-padding: 50px 60px 50px 26px;
     }
 }

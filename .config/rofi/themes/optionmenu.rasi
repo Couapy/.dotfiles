@@ -8,7 +8,7 @@
 }
 #window {
     children: [ horibox ];
-    padding: 648px 1300px;
+    padding: @option-window-padding;
 }
 #horibox {
     background-color: @background-light;
@@ -16,11 +16,9 @@
 }
 #listview {
     layout: horizontal;
-    horizontal-align: 0.5;
-    vertical-align: 0.5;
 }
 #element {
-    padding: 50px 60px 50px 26px;
+    padding: @option-element-padding;
     background-color: @background-light;
 }
 #element.selected {
