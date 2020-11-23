@@ -55,6 +55,7 @@ bind ^S savefile main
 bind ^W writeout main
 bind ^O insert main
 bind ^H exit help
+bind M-H help main
 bind ^F whereis all
 bind ^G findnext all
 bind ^D findprevious all
