@@ -27,6 +27,8 @@ I used the nord color theme for customising every soft I could.
 ![desktop-dunst](https://raw.githubusercontent.com/Couapy/.dotfiles/main/.install/screenshots/desktop-dunst.png)
 ![i3-gaps](https://raw.githubusercontent.com/Couapy/.dotfiles/main/.install/screenshots/i3-gaps.png)
 ![rofi](https://raw.githubusercontent.com/Couapy/.dotfiles/main/.install/screenshots/rofi.png)
+![rofi-i3](https://raw.githubusercontent.com/Couapy/.dotfiles/main/.install/screenshots/rofi-i3.png)
+![rofi-power](https://raw.githubusercontent.com/Couapy/.dotfiles/main/.install/screenshots/rofi-power.png)
 
 ## Install
 
