@@ -14,7 +14,7 @@ font pango:DejaVu Sans 10
 focus_wrapping no 
 focus_follows_mouse no
 focus_on_window_activation focus
-workspace_auto_back_and_forth yes
+workspace_auto_back_and_forth no
 
 ## === Style ===
 ### --- Base ---
@@ -39,8 +39,9 @@ floating_modifier $mod
 floating_maximum_size 1920 x 1080
 bindsym $mod+Return exec kitty
 bindsym $mod+Shift+A kill
-bindsym $mod+d exec sh ~/.config/rofi/scripts/app-launcher.sh
-bindsym $mod+Shift+d exec sh ~/.config/rofi/scripts/ssh-launcher.sh
+bindsym $mod+d exec sh ~/.config/rofi/scripts/appsmenu.sh
+bindsym $mod+Shift+d exec sh ~/.config/rofi/scripts/sshmenu.sh
+bindsym $mod+Mod1+k exec sh ~/.config/rofi/scripts/i3keybindingsmenu.sh
 bindsym $mod+n exec dunstctl history-pop
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
@@ -130,9 +131,10 @@ bindsym $mod+Shift+agrave move container to workspace number $ws10
 ### --- Load workspace layouts ---
 exec --no-startup-id "sh ~/.config/i3/restore_layouts.sh"
 assign [class="Code"] $ws2
+assign [class="csgo_linux64"] $ws2
 assign [class="discord"] $ws3
-for_window [class="^Spotify"] move to workspace $ws3
-for_window [class="Steam"] move to workspace $ws4
+for_window [class="^spotify"] move to workspace $ws3
+for_window [class="^Steam"] move to workspace $ws4
 
 
 ## === Modes ===
@@ -166,9 +168,9 @@ mode " gaps" {
 set $mode_aspect_ratio  Set resolution : (1)3440x1440:120Hz (2)1920x1080:120Hz
 bindsym $mod+a mode "$mode_aspect_ratio"
 mode "$mode_aspect_ratio" {
-    bindsym 1 exec xrandr --output DisplayPort-0 --mode 3440x1440 --rate 120 --set "scaling mode" "Full aspect" ; restart
+    bindsym 1 exec xrandr --output DisplayPort-0 --mode 3440x1440 --rate 120 --set "scaling mode" "None" ; restart
     bindsym 2 exec xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120 --set "scaling mode" "Full aspect" ; restart
-    bindsym $mod+aé mode "default"
+    bindsym $mod+a mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
