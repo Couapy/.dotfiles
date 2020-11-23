@@ -2,8 +2,8 @@
 
 configuration {
     show-icons:         true;
-    icon-theme:         "Paper";
-    cycle:              true;
+    icon-theme:         "Papirus";
+    cycle:              false;
     hide-scrollbar:     false;
     disable-history:    false;
     modi:               "drun";

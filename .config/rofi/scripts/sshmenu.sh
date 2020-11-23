@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-rofi -show ssh -theme themes/classic.rasi -icon-theme Papirus
+rofi -show ssh -theme themes/listmenu.rasi
