@@ -1,0 +1,56 @@
+@import "shared/settings.rasi"
+
+/* Global */
+* {
+    background-color: @background;
+    text-color: @foreground-list;
+    font: @text-font;
+}
+#window {
+    padding: @window-padding;
+}
+
+/* Input bar */
+#inputbar {
+    children: [ prompt, entry ];
+    margin: @inputbar-margin;
+}
+prompt,
+entry {
+    padding: @entry-padding;
+    
+}
+#prompt {
+    background-color: @accent;
+    text-color: @background;
+    margin: @prompt-padding;
+}
+#entry {
+    background-color: @background-light;
+    text-color: @accent;
+}
+
+/* Item list */
+#listview {
+    columns: 5;
+    margin: @listview-margin;
+}
+#element {
+    orientation: vertical;
+    margin: @element-margin;
+    padding: @element-padding;
+    background-color: @background-light;
+    border-color: @background-light;
+}
+#element-icon {
+    size: @element-icon-size;
+}
+#element-text {
+    margin: @element-text-margin;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+#element.selected {
+    background-color: @background-focus;
+    text-color: @accent;
+}

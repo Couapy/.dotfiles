@@ -1,0 +1,19 @@
+/**
+ * Configuration for 3440x1440 resolution
+ */
+* {
+    /* Global */
+    text-font: "Fira Code 12";
+    icon-font: "Font Awesome 5 Free";
+    icon-font-optionmenu: "Font Awesome 5 Free 32";
+    /* Apps menu */
+    window-padding: 20%;
+    entry-padding: 15px 15px;
+    inputbar-margin: 0px 0px 20px 0px;
+    prompt-padding: 0px 20px 0px 0px;
+    listview-margin: -10px;
+    element-margin: 10px;
+    element-padding: 20px;
+    element-icon-size: 96px;
+    element-text-margin: 20px 0px 0px 0px;
+}

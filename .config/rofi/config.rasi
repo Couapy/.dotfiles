@@ -1,6 +1,11 @@
 /** Configured For Applets **/
 
 configuration {
-  show-icons:         true;
-  icon-theme:         "Papirus";
+    show-icons:         true;
+    icon-theme:         "Paper";
+    cycle:              true;
+    hide-scrollbar:     false;
+    disable-history:    false;
+    modi:               "drun";
+    display-drun:       "apps";
 }
