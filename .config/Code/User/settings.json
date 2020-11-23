@@ -65,5 +65,5 @@
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "jupyter.askForKernelRestart": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
 }
