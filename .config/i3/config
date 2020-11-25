@@ -76,6 +76,12 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 bindsym $mod+space focus mode_toggle
 bindsym $mod+q focus parent
+# Merge
+bindsym $mod+Shift+Mod1+j focus left, split h, layout tabbed, focus right, move left
+bindsym $mod+Shift+Mod1+k focus up, split h, layout tabbed, focus down, move up
+bindsym $mod+Shift+Mod1+l focus down, split h, layout tabbed, focus up, move down
+bindsym $mod+Shift+Mod1+M focus right, split h, layout tabbed, focus left, move right
+
 
 ### --- Layout ---
 bindsym $mod+h split h
