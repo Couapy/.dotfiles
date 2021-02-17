@@ -39,6 +39,7 @@ floating_modifier $mod
 floating_maximum_size 1920 x 1080
 bindsym $mod+Return exec kitty
 bindsym $mod+Shift+A kill
+bindsym Mod1+F4 kill
 bindsym $mod+d exec sh ~/.config/rofi/scripts/appsmenu.sh
 bindsym $mod+Shift+d exec sh ~/.config/rofi/scripts/sshmenu.sh
 bindsym $mod+Mod1+k exec sh ~/.config/rofi/scripts/i3keybindingsmenu.sh
@@ -46,7 +47,8 @@ bindsym $mod+n exec dunstctl history-pop
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec sh ~/.config/rofi/scripts/powermenu.sh
-bindsym Print exec "maim -s | xclip -selection clipboard -t image/png"
+bindsym Print exec "maim -s -b 3 | xclip -selection clipboard -t image/png"
+bindsym Shift+Print exec "maim -s ~/Images/$(date +%F_%R).png -b 3 ; cat ~/Images/$(date +%F_%R).png | xclip -selection clipboard -t image/png"
 
 ### --- Media ---
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -85,7 +87,7 @@ bindsym $mod+Shift+Mod1+M focus right, split h, layout tabbed, focus left, move 
 
 ### --- Layout ---
 bindsym $mod+h split h
-bindsym $mod+v split v
+#bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+z layout tabbed
@@ -120,6 +122,7 @@ bindsym $mod+agrave workspace number $ws10
 bindsym $mod+w workspace $ws1
 bindsym $mod+x workspace $ws2
 bindsym $mod+c workspace $ws3
+bindsym $mod+v workspace $ws4
 
 ### --- Move windows to workspace ---
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -135,25 +138,25 @@ bindsym $mod+Shift+agrave move container to workspace number $ws10
 
 ### --- Load workspace layouts ---
 exec --no-startup-id "sh ~/.config/i3/restore_layouts.sh"
-assign [class="Code"] $ws2
 assign [class="csgo_linux64"] $ws2
 assign [class="discord"] $ws3
 for_window [class="^spotify"] move to workspace $ws3
 for_window [class="^Steam"] move to workspace $ws4
-
+#for_window [class="-App$"] floating enable
+#for_window [class="-Window$"] floating enable
 
 ## === Modes ===
 ### --- Resize ---
 bindsym $mod+r mode " resize"
 mode " resize" {
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow height 10 px or 10 ppt
-        bindsym m resize grow width 10 px or 10 ppt
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize shrink height 10 px or 10 ppt
-        bindsym Up resize growtt height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 100 px or 10 ppt
+        bindsym k resize shrink height 100 px or 10 ppt
+        bindsym l resize grow height 100 px or 10 ppt
+        bindsym m resize grow width 100 px or 10 ppt
+        bindsym Left resize shrink width 100 px or 10 ppt
+        bindsym Down resize shrink height 100 px or 10 ppt
+        bindsym Up resize growtt height 100 px or 10 ppt
+        bindsym Right resize grow width 100 px or 10 ppt
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
@@ -170,11 +173,13 @@ mode " gaps" {
 }
 
 ### --- Aspect Ratio ---
-set $mode_aspect_ratio  Set resolution : (1)3440x1440:120Hz (2)1920x1080:120Hz
+set $mode_aspect_ratio  Set resolution : (1)3440x1440:120Hz (2)1920x1080:120Hz (3:Dual)1720x1440:60Hz (4)2560x1080:144Hz
 bindsym $mod+a mode "$mode_aspect_ratio"
 mode "$mode_aspect_ratio" {
     bindsym 1 exec xrandr --output DisplayPort-0 --mode 3440x1440 --rate 120 --set "scaling mode" "None" ; restart
     bindsym 2 exec xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120 --set "scaling mode" "Full aspect" ; restart
+    bindsym 3 exec xrandr --output DisplayPort-0 --mode 1720x1440 --rate 60 --set "scaling mode" "None" ; exec xrandr --output HDMI-A-1 --mode 1720x1440 --rate 60 --set "scaling mode" "None" ; restart
+    bindsym 4 exec xrandr --output DisplayPort-0 --mode 2560x1080 --rate 144 ; restart
     bindsym $mod+a mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -216,9 +221,10 @@ no_focus [window_role="pop-up"]
 for_window [urgent=latest] focus
 
 ### --- Launch applications ---
+exec xrandr --output DisplayPort-0 --mode 3440x1440 --rate 120 --set "scaling mode" "None"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id picom -bf
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/kurt-cotoaga\ [RESIZED].jpg
-exec --no-startup-id redshift -P -t 5000:4000
+exec --no-startup-id redshift -P -t 4000:3000
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id dunst
