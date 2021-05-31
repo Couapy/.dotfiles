@@ -18,6 +18,8 @@ function cd -d "change directory, and activate virtualenvs, if available"
 
     # deactivate an active virtualenv if not int a git directory with an ".env"
     if test -n "$VIRTUAL_ENV" -a "$VIRTUAL_ENV" != "$gitdir/.venv"
-        deactivate
+        if type -q deactivate
+            deactivate
+        end
     end
 end
