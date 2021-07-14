@@ -46,10 +46,7 @@ function fish_prompt --description 'Write out the prompt'
     else
         set -g already_executed
     end
-
-    printf '%s%s%s' (set_color $fish_color_cwd --bold) (prompt_pwd) (set_color normal)
-    # printf '%sat%s %s%s%s' (set_color brblack --bold) (set_color normal) (set_color yellow) (hostname) (set_color normal)
-    printf '%s' (fish_git_prompt)
+    printf '%s%s%s%s' (set_color $fish_color_cwd --bold) (prompt_pwd) (set_color normal) (fish_git_prompt)
 
     if test $CMD_DURATION -gt 1000
         set duration (echo "$CMD_DURATION 1000" | awk '{printf "%.3fs", $1 / $2}')

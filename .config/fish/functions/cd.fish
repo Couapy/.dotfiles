@@ -5,7 +5,7 @@ function cd -d "change directory, and activate virtualenvs, if available"
     builtin cd $argv
 
     # find a parent git directory
-    if git rev-parse --show-toplevel >/dev/null ^/dev/null
+    if git rev-parse --show-toplevel >/dev/null 2>&1
         set gitdir (realpath (git rev-parse --show-toplevel))
     else
         set gitdir ""
