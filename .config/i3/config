@@ -18,15 +18,17 @@ workspace_auto_back_and_forth no
 
 ## === Style ===
 ### --- Base ---
-gaps inner 15
+gaps inner 0
 smart_gaps on
 smart_borders on
 hide_edge_borders smart_no_gaps
-new_window 1pixel
-default_border pixel 4
+new_window pixel 1
+new_float pixel 1
+default_border pixel 3
 
 ### --- Colors ---      border  backgr. text    indicator child_border
-client.focused          #4c7899 #3B4252 #ffffff #2e9ef4   #5E81AC
+#client.focused          #4c7899 #3B4252 #ffffff #2e9ef4   #5E81AC
+client.focused          #A3BE8C #3B4252 #ffffff #2e9ef4   #A3BE8C
 client.focused_inactive #4C566A #434C5E #ffffff #88C0D0   #81A1C1
 client.unfocused        #4C566A #4C566A #ECEFF4 #292d2e   #3B4252
 client.urgent           #434C5E #BF616A #ffffff #BF616A   #BF616A
@@ -49,6 +51,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec sh ~/.config/rofi/scripts/powermenu.sh
 bindsym Print exec "maim -s -b 3 | xclip -selection clipboard -t image/png"
 bindsym Shift+Print exec "maim -s ~/Images/$(date +%F_%R).png -b 3 ; cat ~/Images/$(date +%F_%R).png | xclip -selection clipboard -t image/png"
+bindsym $mod+p exec "polybar-msg cmd toggle"
 
 ### --- Media ---
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -138,12 +141,13 @@ bindsym $mod+Shift+agrave move container to workspace number $ws10
 
 ### --- Load workspace layouts ---
 exec --no-startup-id "sh ~/.config/i3/restore_layouts.sh"
-assign [class="csgo_linux64"] $ws2
 assign [class="discord"] $ws3
 for_window [class="^spotify"] move to workspace $ws3
 for_window [class="^Steam"] move to workspace $ws4
-#for_window [class="-App$"] floating enable
-#for_window [class="-Window$"] floating enable
+assign [class="csgo_linux64"] $ws2
+#for_window [class="-App$"] floating enable, move position center
+#for_window [class="-Window$"] floating enable, move position center
+for_window [window_role="pop-up"] floating enable
 
 ## === Modes ===
 ### --- Resize ---
@@ -167,6 +171,8 @@ bindsym $mod+g mode " gaps"
 mode " gaps" {
         bindsym m gaps inner all plus 5
         bindsym j gaps inner all minus 5
+        bindsym k gaps outer all plus 5
+        bindsym l gaps outer all minus 5
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+g mode "default"
