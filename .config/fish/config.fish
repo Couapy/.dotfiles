@@ -8,6 +8,7 @@ set -x SUDO_PROMPT "["(set_color blue)"sudo"(set_color normal)"]["(set_color gre
 
 # Aliases
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dc='docker-compose'
 alias ll='ls -Alhv --group-directories-first'
 alias gs='git status'
 alias gl='git lg'
