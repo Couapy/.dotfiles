@@ -7,6 +7,8 @@ set __fish_git_prompt_describe_style "branch"
 set __fish_git_prompt_color
 set __fish_git_prompt_color_upstream
 
+set -gx VIRTUAL_ENV_DISABLE_PROMPT "true"
+
 # Colors
 set blue (set_color green)
 set green (set_color green)
@@ -46,7 +48,7 @@ function fish_prompt --description 'Write out the prompt'
     else
         set -g already_executed
     end
-    printf '%s%s%s%s' (set_color $fish_color_cwd --bold) (prompt_pwd) (set_color normal) (fish_git_prompt)
+    printf '%s%s%s %s' (set_color $fish_color_cwd --bold) (prompt_pwd) (set_color normal) (string sub -s 3 -e -1 (fish_git_prompt))
 
     if test $CMD_DURATION -gt 1000
         set duration (echo "$CMD_DURATION 1000" | awk '{printf "%.3fs", $1 / $2}')
@@ -56,7 +58,7 @@ function fish_prompt --description 'Write out the prompt'
     printf '\n'
 
     if set -q VIRTUAL_ENV
-        printf '%s(%s)%s ' (set_color brwhite) (basename $VIRTUAL_ENV) (set_color normal)
+        printf '%s(%s)%s ' (set_color 4B8BBE) (basename $VIRTUAL_ENV) (set_color normal)
     end
 
     if test $last_status -ne 0
